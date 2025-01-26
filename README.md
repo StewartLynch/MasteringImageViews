@@ -1,6 +1,6 @@
 # Mastering SwiftUI Image Views
 
-![mac128](Images/mac128.png) This is the Starter branch for the video on mastering SwiftUI Image views.
+![mac128](Images/mac128.png) This is the completed source code for the video on mastering SwiftUI Image views.
 
 > The Images assets for the tutorial are stored in the **Tutorial Images** folder.
 

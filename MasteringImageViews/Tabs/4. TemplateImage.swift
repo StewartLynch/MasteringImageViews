@@ -19,8 +19,8 @@ struct TemplateImage: View {
     var body: some View {
         NavigationStack {
             Text("Template Rendering")
+                .navigationTitle("Template Rendering")
         }
-        .navigationTitle("Template Rendering")
     }
 }
 
