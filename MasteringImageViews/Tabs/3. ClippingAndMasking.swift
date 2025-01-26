@@ -19,7 +19,7 @@ struct ClippingAndMasking: View {
     var body: some View {
         NavigationStack {
             Text("Clipshapes and Maskiing")
-                .navigationTitle("Clipshapes and Masking")
+                .navigationTitle("Clipshapes/Masking")
         }
     }
 }
