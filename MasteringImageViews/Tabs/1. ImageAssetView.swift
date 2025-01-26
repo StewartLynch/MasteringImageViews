@@ -19,9 +19,26 @@ struct ImageAssetView: View {
     var numImages = 3
     var body: some View {
         NavigationStack{
-            Text("Image Assets")
+            VStack {
+                Image(.lahaina)
+                    .resized()
+                Image("Lahaina")
+                    .resized()
+                Image(uiImage: UIImage(named: "Lahaina")!)
+                    .resized()
+            }
                 .navigationTitle("Image Assets")
         }
+    }
+}
+
+extension Image {
+    func resized() -> some View {
+        self
+            .resizable()
+            .scaledToFill()
+            .frame(height: 200)
+            .clipped()
     }
 }
 
