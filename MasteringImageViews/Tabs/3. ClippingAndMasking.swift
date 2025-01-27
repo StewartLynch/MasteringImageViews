@@ -18,7 +18,25 @@ import SwiftUI
 struct ClippingAndMasking: View {
     var body: some View {
         NavigationStack {
-            Text("Clipshapes and Maskiing")
+            VStack {
+                Image(.rupert)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.circle)
+                Image(.rupert)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                Image(.rupert2)
+                    .resizable()
+                    .scaledToFit()
+                    .mask {
+                        Image(systemName: "apple.logo")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    .frame(height: 300)
+            }
                 .navigationTitle("Clipshapes/Masking")
         }
     }

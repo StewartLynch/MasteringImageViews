@@ -18,9 +18,58 @@ import SwiftUI
 struct ImageEffects: View {
     var body: some View {
         NavigationStack {
-            Text("Image Effects")
+            ScrollView {
+                VStack {
+                    Image(.kelowna)
+                        .normal()
+                    Image(.kelowna)
+                        .normal()
+                        .blur(radius: 10)
+                    Image(.kelowna)
+                        .normal()
+                        .brightness(0.2)
+                    Image(.kelowna)
+                        .normal()
+                        .brightness(-0.2)
+                    Image(.kelowna)
+                        .normal()
+                        .saturation(3.0)
+                    Image(.kelowna)
+                        .normal()
+                        .grayscale(1.0)
+                    Image(.kelowna)
+                        .normal()
+                        .colorMultiply(.green)
+                    Image(.kelowna)
+                        .normal()
+                        .saturation(5.0)
+                        .colorMultiply(.green)
+                        .contrast(2.0)
+                        .opacity(0.9)
+                    ZStack {
+                        Image(.kelowna)
+                            .normal()
+                        Color.red
+                            .blendMode(.screen)
+                    }
+                    ZStack {
+                        Image(.kelowna)
+                            .normal()
+                        Color.red
+                            .blendMode(.softLight)
+                    }
+                }
+            }
+            .scrollBounceBehavior(.basedOnSize)
                 .navigationTitle("Image Effects")
         }
+    }
+}
+extension Image {
+    func normal() -> some View {
+        self
+            .resizable()
+            .scaledToFit()
     }
 }
 

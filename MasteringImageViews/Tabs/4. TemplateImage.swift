@@ -18,7 +18,23 @@ import SwiftUI
 struct TemplateImage: View {
     var body: some View {
         NavigationStack {
-            Text("Template Rendering")
+            VStack {
+                Image(.grapes)
+                    .resizable()
+                    .scaledToFit()
+                Image(.grapes2)
+//                    .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
+                Button {
+                    
+                }label: {
+                    Image(.grapes2)
+                        .resizable()
+                        .scaledToFit()
+                }
+                .tint(.green.mix(with: .black, by: 0.4))
+            }
                 .navigationTitle("Template Rendering")
         }
     }
