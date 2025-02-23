@@ -3,7 +3,9 @@
 ![mac128](Images/mac128.png) This is the completed source code for the video on mastering SwiftUI Image views.
 
 > The Images assets for the tutorial are stored in the **Tutorial Images** folder.
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=KnuKc9eICM4
+" target="_blank"><img src="http://img.youtube.com/vi/KnuKc9eICM4/0.jpg" 
+alt="Mastering Image Views" width="480" height="360" border="1" /></a>
 
 
 If you want to support my work, you can - </br>
